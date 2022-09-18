@@ -1,0 +1,40 @@
+{
+  "name": "@digidockage/hassio-addon-frameshot",
+  "description": "Addon to generates a png from a Home Assistant dashboard, which can be displayed on a photo frame",
+  "version": "0.0.1",
+  "author": {
+    "name": "Sgobbi Federico",
+    "email": "federico@sgobbi.it",
+    "url": "https://sgobbit.com"
+  },
+  "license": "GPL3",
+  "main": "./server/index.js",
+  "scripts": {
+    "lint": "eslint server/",
+    "debug": "cross-env NODE_ENV=development nodemon --inspect .",
+    "start": "node ."
+  },
+  "dependencies": {
+    "@digidockage/node-server-util-apierror": "^1.0.0",
+    "@digidockage/node-server-util-catchasync": "^1.0.1",
+    "@digidockage/node-server-util-pick": "^1.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.2",
+    "express": "^4.18.1",
+    "helmet": "^6.0.0",
+    "http-status": "^1.5.3",
+    "joi": "^17.6.0",
+    "puppeteer": "^17.1.3",
+    "winston": "^3.8.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.23.1",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jest": "^27.0.4",
+    "eslint-plugin-n": "^15.2.5",
+    "eslint-plugin-promise": "^6.0.1",
+    "eslint-plugin-react": "^7.31.8",
+    "nodemon": "^2.0.19"
+  }
+}
